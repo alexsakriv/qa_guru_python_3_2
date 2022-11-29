@@ -3,7 +3,7 @@ from selene.support.shared import browser
 
 
 @pytest.fixture()
-def size_browser():
-    browser.config.window_width = 1900
-    browser.config.window_height = 1000
-    browser.open()
+def open_browser_with_size_1920_1080():
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
+    browser.open('https://google.com/ncr')
